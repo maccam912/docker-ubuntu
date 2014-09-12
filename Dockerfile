@@ -1,7 +1,7 @@
 FROM ubuntu
 MAINTAINER Matt Koski <maccam912@gmail.com>
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install python-software-properties
+RUN apt-get install -y python-software-properties
 RUN apt-add-repository ppa:freenx-team/trusty
 RUN apt-get update
 RUN apt-get update && apt-get install vim git build-essential wget screen tmux curl ubuntu-desktop vnc4server remmina freenx-server -y
